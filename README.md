@@ -2,7 +2,7 @@
 
 A dynamic, responsive tier list website for Single Board Computers (SBCs), embedded SBCs, Embedded System Boards, and Development Boards. The site provides a visual ranking system with S through D tiers, allowing users to quickly assess and compare different boards.
 
-**You can find the live website at [sbctierlist.com](https://sbctierlist.com)**
+<p align="center">**You can find the live website at [sbctierlist.com](https://sbctierlist.com)**</p>
 
 ## Features
 
