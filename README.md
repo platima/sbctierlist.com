@@ -14,7 +14,7 @@ A dynamic, responsive tier list website for Single Board Computers (SBCs), embed
 - 🖼️ Modal view for detailed board information
 - 🔗 Links to video reviews and purchase options
 - 🌙 Dark mode interface
-- 🏷️ Standardized board type definitions following [platima/board-taxonomies](https://github.com/platima/board-taxomomies)
+- 🏷️ Standardised board type definitions following [platima/board-taxonomies](https://github.com/platima/board-taxomomies)
 
 ## Data Structure
 
