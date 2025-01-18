@@ -8,5 +8,15 @@
     "reviewDate": "2025-01-10",
     "purchaseLink": "https://shop.plati.ma/products/rp2350-plus-processor-module-type-c-4mb-no-headers",
     "type": "ESB"
+  },
+  {
+    "name": "ESP32-P4-Function-EV-Board",
+    "videoUrl": "TBC",
+    "imagePath": "/img/esp32-p4-function-ev-board.png",
+    "tier": "A",
+    "tierPosition": 0,
+    "reviewDate": "2025-01-18",
+    "purchaseLink": "https://www.aliexpress.com/item/1005007259059322.html",
+    "type": "DevBoard"
   }
 ]
