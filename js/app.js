@@ -162,6 +162,11 @@ const TierList = () => {
           </>
         )}
       </Modal>
+      {/* Footer */}
+      <footer className="footer">
+        <a href="https://shop.plati.ma" target="_blank" rel="noopener noreferrer">SBC Shop</a>
+        <a href="https://youtube.com/@PlatimaTinkers" target="_blank" rel="noopener noreferrer">YouTube Channel</a>
+      </footer>
     </div>
   );
 };
