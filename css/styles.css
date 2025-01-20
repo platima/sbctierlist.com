@@ -320,6 +320,25 @@ button.active {
   }
 }
 
+/* Footer Styles */
+.footer {
+  background-color: var(--bg-secondary);
+  padding: 1rem;
+  text-align: center;
+  margin-top: 2rem;
+  border-top: 1px solid var(--bg-tertiary);
+}
+
+.footer a {
+  color: var(--accent-primary);
+  text-decoration: none;
+  margin: 0 1rem;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
 /* Scrollbar Styling */
 ::-webkit-scrollbar {
   width: 8px;
