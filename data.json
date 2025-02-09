@@ -11,12 +11,22 @@
   },
   {
     "name": "ESP32-P4-Function-EV-Board",
-    "videoUrl": "TBC",
+    "videoUrl": "https://youtu.be/6CwAD8MZ5Ps",
     "imagePath": "/img/esp32-p4-function-ev-board.png",
     "tier": "A",
     "tierPosition": 0,
     "reviewDate": "2025-01-18",
     "purchaseLink": "https://www.aliexpress.com/item/1005007259059322.html",
     "type": "DevBoard"
+  },
+  {
+    "name": "Luckfox Lyra / Lyra Plus",
+    "videoUrl": "https://youtube.com/@PlatimaTinkers",
+    "imagePath": "/img/luckfox-lyra-plus.png",
+    "tier": "A",
+    "tierPosition": 1,
+    "reviewDate": "2025-02-09",
+    "purchaseLink": "https://shop.plati.ma/search?q=lyra",
+    "type": "eSBC"
   }
 ]
