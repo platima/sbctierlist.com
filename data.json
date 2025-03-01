@@ -21,12 +21,22 @@
   },
   {
     "name": "Luckfox Lyra / Lyra Plus",
-    "videoUrl": "https://youtube.com/@PlatimaTinkers",
+    "videoUrl": "https://youtu.be/zrJwj2XjJkk",
     "imagePath": "/img/luckfox-lyra-plus.png",
     "tier": "A",
     "tierPosition": 1,
     "reviewDate": "2025-02-09",
     "purchaseLink": "https://shop.plati.ma/search?q=lyra",
     "type": "eSBC"
+  },
+  {
+    "name": "Luckfox Omni / Core3576",
+    "videoUrl": "https://youtube.com/@PlatimaTinkers",
+    "imagePath": "/img/luckfox-omni3576.png",
+    "tier": "A",
+    "tierPosition": 1,
+    "reviewDate": "2025-02-21",
+    "purchaseLink": "https://shop.plati.ma/search?q=Omni3576",
+    "type": "DevBoard"
   }
 ]
