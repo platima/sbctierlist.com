@@ -38,5 +38,15 @@
     "reviewDate": "2025-02-21",
     "purchaseLink": "https://shop.plati.ma/search?q=Omni3576",
     "type": "DevBoard"
+  },
+  {
+    "name": "Radxa X4",
+    "videoUrl": "https://youtu.be/v-_6GOzKk-o",
+    "imagePath": "/img/radxa-x4.png",
+    "tier": "S",
+    "tierPosition": 1,
+    "reviewDate": "2025-03-21",
+    "purchaseLink": "https://shop.plati.ma/",
+    "type": "SBC"
   }
 ]
