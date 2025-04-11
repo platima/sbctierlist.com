@@ -48,5 +48,15 @@
     "reviewDate": "2025-03-21",
     "purchaseLink": "https://shop.plati.ma/",
     "type": "SBC"
+  },
+  {
+    "name": "Radxa Zero 2 Pro",
+    "videoUrl": "https://youtu.be/s2prOylTUxU",
+    "imagePath": "/img/radxa-zero2pro.png",
+    "tier": "A",
+    "tierPosition": 1,
+    "reviewDate": "2025-03-28",
+    "purchaseLink": "https://shop.plati.ma/",
+    "type": "SBC"
   }
 ]
