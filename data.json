@@ -34,7 +34,7 @@
     "videoUrl": "https://youtu.be/Pbdw-kcSrrg",
     "imagePath": "/img/luckfox-omni3576.png",
     "tier": "A",
-    "tierPosition": 1,
+    "tierPosition": 2,
     "reviewDate": "2025-02-21",
     "purchaseLink": "https://shop.plati.ma/search?q=Omni3576",
     "type": "DevBoard"
@@ -54,9 +54,19 @@
     "videoUrl": "https://youtu.be/s2prOylTUxU",
     "imagePath": "/img/radxa-zero2pro.png",
     "tier": "A",
-    "tierPosition": 1,
+    "tierPosition": 3,
     "reviewDate": "2025-03-28",
     "purchaseLink": "https://shop.plati.ma/",
+    "type": "SBC"
+  },
+  {
+    "name": "Luckfox Pico Pi A W 4G",
+    "videoUrl": "https://www.youtube.com/watch?v=pSYjF9wsaVc",
+    "imagePath": "/img/luckfox-pico-pi.png",
+    "tier": "S",
+    "tierPosition": 2,
+    "reviewDate": "2025-05-03",
+    "purchaseLink": "https://shop.plati.ma/products/luckfox-pico-pi-preorder",
     "type": "SBC"
   }
 ]
