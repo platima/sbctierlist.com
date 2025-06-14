@@ -58,5 +58,15 @@
     "reviewDate": "2025-03-28",
     "purchaseLink": "https://shop.plati.ma/",
     "type": "SBC"
+  },
+  {
+    "name": "Orange Pi RV2",
+    "videoUrl": "https://youtu.be/8fRqIR2PY9c",
+    "imagePath": "/img/orangepi-rv2.png",
+    "tier": "B",
+    "tierPosition": 0,
+    "reviewDate": "2025-06-15",
+    "purchaseLink": "https://shop.plati.ma/",
+    "type": "SBC"
   }
 ]
