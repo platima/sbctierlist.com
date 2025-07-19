@@ -78,5 +78,45 @@
     "reviewDate": "2025-06-15",
     "purchaseLink": "https://shop.plati.ma/",
     "type": "SBC"
+  },
+  {
+    "name": "Luckfox Lyra Ultra W",
+    "videoUrl": "https://youtu.be/DZf1Nye2rZ4",
+    "imagePath": "/img/luckfox-lyra-ultra-w.png",
+    "tier": "A",
+    "tierPosition": 4,
+    "reviewDate": "2025-06-21",
+    "purchaseLink": "https://shop.plati.ma/",
+    "type": "eSBC"
+  },
+  {
+    "name": "Luckfox Pico 2",
+    "videoUrl": "https://youtu.be/DZf1Nye2rZ4",
+    "imagePath": "/img/luckfox-pico-2.png",
+    "tier": "A",
+    "tierPosition": 5,
+    "reviewDate": "2025-06-21",
+    "purchaseLink": "https://shop.plati.ma/products/luckfox-pico-2-micro-development-board",
+    "type": "ESB"
+  },
+  {
+    "name": "Luckfox Nova",
+    "videoUrl": "https://youtu.be/DZf1Nye2rZ4",
+    "imagePath": "/img/luckfox-nova.png",
+    "tier": "A",
+    "tierPosition": 6,
+    "reviewDate": "2025-06-21",
+    "purchaseLink": "https://shop.plati.ma/",
+    "type": "eSBC"
+  },
+  {
+    "name": "Luckfox Lyra Zero W",
+    "videoUrl": "https://youtu.be/aKG75-EMZdM",
+    "imagePath": "/img/luckfox-lyra-zero-w.png",
+    "tier": "S",
+    "tierPosition": 3,
+    "reviewDate": "2025-07-18",
+    "purchaseLink": "https://shop.plati.ma/products/luckfox-lyra-zero-w-micro-linux-development-board",
+    "type": "eSBC"
   }
 ]
