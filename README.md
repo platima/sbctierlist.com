@@ -1,4 +1,5 @@
 <img align="right" src="https://visitor-badge.laobi.icu/badge?page_id=platima.sbctierlist" height="20" />
+
 # SBC Tier List
 
 A dynamic, responsive tier list website for Single Board Computers (SBCs), embedded SBCs, Embedded System Boards, and Development Boards. The site provides a visual ranking system with S through D tiers, allowing users to quickly assess and compare different boards.
