@@ -118,5 +118,15 @@
     "reviewDate": "2025-07-18",
     "purchaseLink": "https://shop.plati.ma/products/luckfox-lyra-zero-w-micro-linux-development-board",
     "type": "eSBC"
+  },
+  {
+    "name": "ODROID-C5",
+    "videoUrl": "https://youtu.be/dJSKl21ji7o",
+    "imagePath": "/img/odroid-c5.png",
+    "tier": "A",
+    "tierPosition": 7,
+    "reviewDate": "2025-07-21",
+    "purchaseLink": "https://shop.plati.ma/products/odroid-c5-power-efficient-quad-core-sbc",
+    "type": "SBC"
   }
 ]
