@@ -128,5 +128,15 @@
     "reviewDate": "2025-07-21",
     "purchaseLink": "https://shop.plati.ma/products/odroid-c5-power-efficient-quad-core-sbc",
     "type": "SBC"
+  },
+  {
+    "name": "SpacemiT MUSE Pi Pro",
+    "videoUrl": "hhttps://www.youtube.com/watch?v=0IlzjlkxWlI",
+    "imagePath": "/img/spacemit-muse-pi-pro.png",
+    "tier": "A",
+    "tierPosition": 8,
+    "reviewDate": "2025-08-09",
+    "purchaseLink": "https://shop.plati.ma/",
+    "type": "SBC"
   }
 ]
