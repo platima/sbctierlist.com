@@ -164,9 +164,9 @@ const TierList = () => {
       </Modal>
       {/* Footer */}
       <footer className="footer">
-        <a href="https://shop.plati.ma" target="_blank" rel="noopener noreferrer">SBC Shop</a>
-        <img align="center" src="https://visitor-badge.laobi.icu/badge?page_id=platima.sbctierlist.com" height="20" /><br/>
-        <a href="https://youtube.com/@PlatimaTinkers" target="_blank" rel="noopener noreferrer">YouTube Channel</a>
+        <a href="https://shop.plati.ma" target="_blank" rel="noopener noreferrer">SBC Shop</a> 
+        <a href="https://youtube.com/@PlatimaTinkers" target="_blank" rel="noopener noreferrer">YouTube Channel</a><br/>
+        <img align="center" src="https://visitor-badge.laobi.icu/badge?page_id=platima.sbctierlist.com" height="20" /> 
       </footer>
     </div>
   );
