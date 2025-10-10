@@ -131,11 +131,21 @@
   },
   {
     "name": "SpacemiT MUSE Pi Pro",
-    "videoUrl": "hhttps://www.youtube.com/watch?v=0IlzjlkxWlI",
+    "videoUrl": "https://www.youtube.com/watch?v=0IlzjlkxWlI",
     "imagePath": "/img/spacemit-muse-pi-pro.png",
     "tier": "A",
     "tierPosition": 8,
     "reviewDate": "2025-08-09",
+    "purchaseLink": "https://shop.plati.ma/",
+    "type": "SBC"
+  },
+  {
+    "name": "ArmSoM Sige7",
+    "videoUrl": "https://youtu.be/dwth8_nQvG4",
+    "imagePath": "/img/armsom-sige7.png",
+    "tier": "S",
+    "tierPosition": 4,
+    "reviewDate": "2025-10-03",
     "purchaseLink": "https://shop.plati.ma/",
     "type": "SBC"
   }
