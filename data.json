@@ -148,5 +148,15 @@
     "reviewDate": "2025-10-03",
     "purchaseLink": "https://shop.plati.ma/",
     "type": "SBC"
+  },
+  {
+    "name": "Radxa Cubie A7Z",
+    "videoUrl": "https://www.youtube.com/watch?v=mYePdx81Iew",
+    "imagePath": "/img/radxa_cubie_a7z.png",
+    "tier": "B",
+    "tierPosition": 1,
+    "reviewDate": "2025-10-03",
+    "purchaseLink": "https://shop.plati.ma/",
+    "type": "SBC"
   }
 ]
