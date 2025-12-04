@@ -158,5 +158,15 @@
     "reviewDate": "2025-11-07",
     "purchaseLink": "https://shop.plati.ma/",
     "type": "SBC"
+  },
+  {
+    "name": "ArmSoM CM5 + IO Board",
+    "videoUrl": "https://www.youtube.com/watch?v=p55ehXBBLPE",
+    "imagePath": "/img/armsom-cm5.png",
+    "tier": "S",
+    "tierPosition": 5,
+    "reviewDate": "2025-11-30",
+    "purchaseLink": "https://shop.plati.ma/",
+    "type": "SBC"
   }
 ]
