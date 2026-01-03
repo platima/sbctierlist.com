@@ -168,5 +168,15 @@
     "reviewDate": "2025-11-30",
     "purchaseLink": "https://shop.plati.ma/",
     "type": "SBC"
+  },
+  {
+    "name": "Libre Potato Sweet Potato",
+    "videoUrl": "https://www.youtube.com/watch?v=fG3ZR3gSZvQ",
+    "imagePath": "/img/libre-sweet.png",
+    "tier": "b",
+    "tierPosition": 2,
+    "reviewDate": "2026-01-03",
+    "purchaseLink": "https://geni.us/lLBBZ",
+    "type": "SBC"
   }
 ]
