@@ -178,5 +178,15 @@
     "reviewDate": "2026-01-03",
     "purchaseLink": "https://geni.us/lLBBZ",
     "type": "SBC"
+  },
+  {
+    "name": "Luckfox Pico Zero",
+    "videoUrl": "https://www.youtube.com/watch?v=TH_0U9GH-Nk",
+    "imagePath": "/img/luckfox-pico-zero.png",
+    "tier": "S",
+    "tierPosition": 6,
+    "reviewDate": "2026-01-16",
+    "purchaseLink": "https://shop.plati.ma/",
+    "type": "eSBC"
   }
 ]
