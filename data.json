@@ -188,5 +188,15 @@
     "reviewDate": "2026-01-16",
     "purchaseLink": "https://shop.plati.ma/",
     "type": "eSBC"
+  },
+  {
+    "name": "ArmSoM P2pro",
+    "videoUrl": "https://www.youtube.com/watch?v=Slbjn-iNnDo",
+    "imagePath": "/img/armsom-p2pro.png",
+    "tier": "B",
+    "tierPosition": 3,
+    "reviewDate": "2026-01-31",
+    "purchaseLink": "https://shop.plati.ma/",
+    "type": "eSBC"
   }
 ]
