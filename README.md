@@ -29,12 +29,12 @@ The site loads board data from a `data.json` file with the following structure:
   {
     "name": "Waveshare RP2350-Plus 4MB",
     "videoUrl": "https://youtu.be/example",
-    "imagePath": "img/waveshare-rp2350-plus.png",
+    "imagePath": "/img/waveshare-rp2350-plus.png",
     "tier": "S",
     "tierPosition": 0,
     "reviewDate": "2025-01-10",
     "purchaseLink": "https://example.com/product",
-    "type": "sbc"
+    "type": "ESB"
   }
 ]
 ```
@@ -48,7 +48,7 @@ The site loads board data from a `data.json` file with the following structure:
 - `tierPosition`: Position within tier (0 based)
 - `reviewDate`: Date of review
 - `purchaseLink`: Where to purchase
-- `type`: Board category (sbc/esbc/esb/devboard)
+- `type`: Board category (`SBC`, `eSBC`, `ESB`, or `DevBoard`) — case-sensitive; see [board-taxonomies](https://github.com/platima/board-taxomomies) for definitions
 
 ## Development
 
@@ -71,11 +71,11 @@ This is a static site using vanilla JavaScript with React loaded via CDN. No bui
 
 ## Deployment
 
-The site is hosted on GitHub Pages with a custom domain. To deploy updates:
+The site is hosted on Cloudflare Pages with a custom domain. To deploy updates:
 
-1. Push changes to the main branch
-2. GitHub Actions will automatically deploy to GitHub Pages
-3. The site will be available at the configured domain
+1. Push changes to the `main` branch
+2. Cloudflare Pages will automatically build and deploy
+3. The site will be available at [sbctierlist.com](https://sbctierlist.com)
 
 ## License
 

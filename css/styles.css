@@ -91,7 +91,7 @@ button.active {
 .tier-row {
   display: flex;
   margin-bottom: 4px;
-  height: 120px; /* Fixed height for tier rows */
+  min-height: 120px; /* Minimum height; expands when a tier has many items */
 }
 
 .tier-label {
@@ -249,7 +249,7 @@ button.active {
   }
 
   .tier-row {
-    height: 100px;
+    min-height: 100px;
   }
 }
 
@@ -291,7 +291,7 @@ button.active {
   }
 
   .tier-row {
-    height: 80px;
+    min-height: 80px;
   }
 }
 
