@@ -8,7 +8,14 @@ A dynamic, responsive tier list website for Single Board Computers (SBCs), embed
 
 ## Features
 
-- 📊 Interactive tier list display (S through D rankings)
+- 📊 Interactive tier list display (S through F rankings) with score ranges
+- 🔢 Score-based tier system:
+  - **S** — 25 and above
+  - **A** — 20–24
+  - **B** — 15–19
+  - **C** — 10–14
+  - **D** — 5–9
+  - **F** — 0–4
 - 🔍 Filtering system for different board types:
   - Single Board Computers (SBCs)
   - Embedded Single Board Computers (eSBCs)
@@ -44,7 +51,7 @@ The site loads board data from a `data.json` file with the following structure:
 - `name`: Board name
 - `videoUrl`: YouTube review link
 - `imagePath`: Path to board image
-- `tier`: Ranking (S/A/B/C/D)
+- `tier`: Ranking (`S`/`A`/`B`/`C`/`D`/`F`)
 - `tierPosition`: Position within tier (0 based)
 - `reviewDate`: Date of review
 - `purchaseLink`: Where to purchase

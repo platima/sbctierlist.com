@@ -24,7 +24,17 @@ const Modal = ({ isOpen, onClose, children }) => {
 };
 
 const TierList = () => {
-  const TIERS = ['S', 'A', 'B', 'C', 'D'];
+  const TIERS = ['S', 'A', 'B', 'C', 'D', 'F'];
+
+  // Score ranges that define each tier
+  const TIER_SCORES = {
+    S: '25+',
+    A: '20-24',
+    B: '15-19',
+    C: '10-14',
+    D: '5-9',
+    F: '0-4',
+  };
   
   // Map display names to actual filter values
   const FILTER_MAPPING = {
@@ -90,7 +100,8 @@ const TierList = () => {
         {TIERS.map(tier => (
           <div key={tier} className="tier-row">
             <div className={`tier-label ${tier}`}>
-              {tier}
+              <span className="tier-letter">{tier}</span>
+              <span className="tier-score">{TIER_SCORES[tier]}</span>
             </div>
             
             <div className="tier-content">

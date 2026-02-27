@@ -11,6 +11,7 @@
   --tier-b: rgb(255, 223, 127);
   --tier-c: rgb(255, 255, 127);
   --tier-d: rgb(191, 255, 127);
+  --tier-f: rgb(180, 180, 180);
 }
 
 html, body {
@@ -97,11 +98,24 @@ button.active {
 .tier-label {
   width: 80px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: 2rem;
   font-weight: bold;
   flex-shrink: 0;
+  gap: 2px;
+}
+
+.tier-letter {
+  line-height: 1;
+}
+
+.tier-score {
+  font-size: 0.65rem;
+  font-weight: 600;
+  opacity: 0.75;
+  letter-spacing: 0.02em;
 }
 
 .tier-label.S { background-color: var(--tier-s); color: #000; }
@@ -109,6 +123,7 @@ button.active {
 .tier-label.B { background-color: var(--tier-b); color: #000; }
 .tier-label.C { background-color: var(--tier-c); color: #000; }
 .tier-label.D { background-color: var(--tier-d); color: #000; }
+.tier-label.F { background-color: var(--tier-f); color: #000; }
 
 .tier-content {
   box-sizing: border-box;

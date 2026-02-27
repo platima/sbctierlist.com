@@ -86,6 +86,21 @@ All board data lives in `data.json` as a flat array. Each entry:
   - Note: the repo name intentionally contains a typo ("taxomomies"); do not
     "correct" links that point there.
 
+## Tier Score Ranges
+
+Each tier corresponds to a numeric score range, displayed as a subtitle on the tier label:
+
+| Tier | Score range |
+|------|-------------|
+| S    | 25+         |
+| A    | 20–24       |
+| B    | 15–19       |
+| C    | 10–14       |
+| D    | 5–9         |
+| F    | 0–4         |
+
+The `TIER_SCORES` constant in `app.js` maps tier letters to display strings. The `tier` field in `data.json` is still set explicitly per board; there is no auto-calculation from a numeric score field.
+
 ## React App Structure (`js/app.js`)
 
 Two components:
@@ -151,7 +166,7 @@ Cloudflare Pages with a custom domain:
 
 - **In-browser Babel** adds ~300 ms parse time on first load. Acceptable for a
   hobby site; would be unacceptable for a commercial product.
-- **No E tier boards** currently in `data.json`, but the tier row is always
+- **No F tier boards** currently in `data.json`, but the F tier row is always
   rendered (it will be empty).
 - **Visitor badge** in `index.html` and `README.md` uses
   `visitor-badge.laobi.icu`, an external third-party service with no SLA.
@@ -163,6 +178,7 @@ Cloudflare Pages with a custom domain:
 
 - **Status:** Live and functional.
 - React upgraded to 18.3.1 (from 18.2.0); Babel upgraded to 7.26.10.
+- F tier added (grey, score 0–4); score ranges displayed as subtitle on each tier label.
 - Using `ReactDOM.createRoot` API (React 18 standard).
 - Tier rows use `min-height` so they expand when a tier has many boards.
 - `site.webmanifest` has correct name and dark `theme_color`/`background_color`.
