@@ -119,7 +119,7 @@ button.active {
   flex-wrap: wrap;
   gap: 0.5rem;
   align-content: flex-start; /* Aligns items to the top */
-  height: 100%; /* Fill the tier row height */
+  min-height: 120px; /* Mirrors tier-row min-height so empty tiers don't collapse */
 }
 
 /* Item Card Styles */
@@ -251,6 +251,10 @@ button.active {
   .tier-row {
     min-height: 100px;
   }
+
+  .tier-content {
+    min-height: 100px;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -291,6 +295,10 @@ button.active {
   }
 
   .tier-row {
+    min-height: 80px;
+  }
+
+  .tier-content {
     min-height: 80px;
   }
 }
