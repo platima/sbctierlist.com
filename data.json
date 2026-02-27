@@ -198,5 +198,15 @@
     "reviewDate": "2026-01-31",
     "purchaseLink": "https://shop.plati.ma/",
     "type": "eSBC"
+  },
+  {
+    "name": "Walnut Pi ZeroW",
+    "videoUrl": "https://www.youtube.com/watch?v=mD4jN6DyF7M",
+    "imagePath": "/img/walnut-pi-zerow.png",
+    "tier": "A",
+    "tierPosition": 9,
+    "reviewDate": "2026-02-13",
+    "purchaseLink": "https://shop.plati.ma/",
+    "type": "SBC"
   }
 ]
