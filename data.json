@@ -208,5 +208,15 @@
     "reviewDate": "2026-02-13",
     "purchaseLink": "https://shop.plati.ma/",
     "type": "SBC"
+  },
+  {
+    "name": "Libre Computer Alta",
+    "videoUrl": "https://www.youtube.com/watch?v=f7HTRKkTLog",
+    "imagePath": "/img/libre-computer-alta.png",
+    "tier": "C",
+    "tierPosition": 0,
+    "reviewDate": "2026-02-27",
+    "purchaseLink": "https://shop.plati.ma/",
+    "type": "SBC"
   }
 ]
