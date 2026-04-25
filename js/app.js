@@ -1,17 +1,66 @@
-const Modal = ({ isOpen, onClose, children }) => {
+const Modal = ({ isOpen, titleId, onClose, initialFocusRef, children }) => {
+  const dialogRef = React.useRef(null);
+
+  React.useEffect(() => {
+    if (!isOpen) {
+      return undefined;
+    }
+
+    const previousOverflow = document.body.style.overflow;
+
+    const handleKeyDown = (event) => {
+      if (event.key === 'Escape') {
+        event.preventDefault();
+        onClose();
+      }
+    };
+
+    document.body.style.overflow = 'hidden';
+    document.addEventListener('keydown', handleKeyDown);
+
+    const focusTarget = initialFocusRef && initialFocusRef.current
+      ? initialFocusRef.current
+      : dialogRef.current;
+
+    if (focusTarget) {
+      window.requestAnimationFrame(() => {
+        focusTarget.focus();
+      });
+    }
+
+    return () => {
+      document.body.style.overflow = previousOverflow;
+      document.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [initialFocusRef, isOpen, onClose]);
+
   if (!isOpen) return null;
-  
-  const handleBackdropClick = (e) => {
-    if (e.target === e.currentTarget) {
+
+  const handleBackdropClick = (event) => {
+    if (event.target === event.currentTarget) {
       onClose();
     }
   };
-  
+
   return (
-    <div className="modal-backdrop fixed inset-0 flex items-center justify-center p-4" onClick={handleBackdropClick}>
-      <div className="modal-content" onClick={e => e.stopPropagation()}>
+    <div className="modal-backdrop" onClick={handleBackdropClick}>
+      <div
+        ref={dialogRef}
+        className="modal-content"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby={titleId}
+        tabIndex={-1}
+        onClick={(event) => event.stopPropagation()}
+      >
         <div className="modal-header">
-          <button onClick={onClose} className="modal-close">
+          <button
+            type="button"
+            onClick={onClose}
+            className="modal-close"
+            aria-label="Close board details"
+            ref={initialFocusRef}
+          >
             ✕
           </button>
         </div>
@@ -48,14 +97,54 @@ const TierList = () => {
   const FILTERS = Object.keys(FILTER_MAPPING); // Use display names for UI
 
   const [items, setItems] = React.useState([]);
+  const [isLoading, setIsLoading] = React.useState(true);
+  const [loadError, setLoadError] = React.useState('');
   const [filter, setFilter] = React.useState('All');
   const [selectedItem, setSelectedItem] = React.useState(null);
+  const closeButtonRef = React.useRef(null);
+  const lastTriggerRef = React.useRef(null);
+  const modalTitleId = 'selected-item-title';
 
   React.useEffect(() => {
+    let isMounted = true;
+
+    setIsLoading(true);
+    setLoadError('');
+
     fetch('data.json')
-      .then(response => response.json())
-      .then(data => setItems(data))
-      .catch(error => console.error('Error loading data:', error));
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`Request failed with status ${response.status}`);
+        }
+
+        return response.json();
+      })
+      .then(data => {
+        if (!Array.isArray(data)) {
+          throw new Error('Invalid data format');
+        }
+
+        if (isMounted) {
+          setItems(data);
+        }
+      })
+      .catch(error => {
+        console.error('Error loading data:', error);
+
+        if (isMounted) {
+          setItems([]);
+          setLoadError('Unable to load the board list right now. Please refresh and try again.');
+        }
+      })
+      .finally(() => {
+        if (isMounted) {
+          setIsLoading(false);
+        }
+      });
+
+    return () => {
+      isMounted = false;
+    };
   }, []);
 
   const filteredItems = items.filter(item => {
@@ -68,23 +157,52 @@ const TierList = () => {
   });
 
   const formatDate = (dateString) => {
-    return new Date(dateString).toLocaleDateString('en-US', {
+    const reviewDate = new Date(dateString);
+
+    if (Number.isNaN(reviewDate.getTime())) {
+      return dateString;
+    }
+
+    return reviewDate.toLocaleDateString('en-US', {
       year: 'numeric',
       month: 'long',
       day: 'numeric'
     });
   };
 
+  const openItemDetails = (item, event) => {
+    lastTriggerRef.current = event.currentTarget;
+    setSelectedItem(item);
+  };
+
+  const closeModal = () => {
+    const trigger = lastTriggerRef.current;
+
+    setSelectedItem(null);
+
+    if (trigger && typeof trigger.focus === 'function') {
+      window.requestAnimationFrame(() => {
+        if (document.contains(trigger)) {
+          trigger.focus();
+        }
+      });
+    }
+  };
+
+  const showEmptyFilterState = !isLoading && !loadError && filteredItems.length === 0;
+
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container">
       <h1>SBC Tier List</h1>
       
       {/* Filter Buttons */}
-      <div className="filter-buttons">
+      <div className="filter-buttons" role="group" aria-label="Board type filters">
         {FILTERS.map(filterOption => (
           <button
+            type="button"
             key={filterOption}
             onClick={() => setFilter(filterOption)}
+            aria-pressed={filter === filterOption}
             className={filter === filterOption ? 'active' : ''}
           >
             {filterOption}
@@ -95,54 +213,79 @@ const TierList = () => {
         Filter definitions available at <a href="https://github.com/platima/board-taxomomies" target="_blank" rel="noopener noreferrer">github.com/platima/board-taxomomies</a>
       </div>
 
+      {isLoading && (
+        <div className="status-panel" role="status" aria-live="polite">
+          Loading boards...
+        </div>
+      )}
+
+      {loadError && (
+        <div className="status-panel status-error" role="alert">
+          {loadError}
+        </div>
+      )}
+
+      {showEmptyFilterState && (
+        <div className="status-panel" role="status" aria-live="polite">
+          No boards match the current filter.
+        </div>
+      )}
+
       {/* Tier List */}
-      <div className="tier-list">
-        {TIERS.map(tier => (
-          <div key={tier} className="tier-row">
-            <div className={`tier-label ${tier}`}>
-              <span className="tier-letter">{tier}</span>
-              <span className="tier-score">{TIER_SCORES[tier]}</span>
+      {!isLoading && !loadError && (
+        <div className="tier-list">
+          {TIERS.map(tier => (
+            <div key={tier} className="tier-row">
+              <div className={`tier-label ${tier}`}>
+                <span className="tier-letter">{tier}</span>
+                <span className="tier-score">{TIER_SCORES[tier]}</span>
+              </div>
+              
+              <div className="tier-content">
+                {filteredItems
+                  .filter(item => item.tier === tier)
+                  .sort((a, b) => a.tierPosition - b.tierPosition)
+                  .map(item => (
+                    <button
+                      type="button"
+                      key={`${item.name}-${item.tier}-${item.tierPosition}`}
+                      onClick={(event) => openItemDetails(item, event)}
+                      className="item-card"
+                      aria-haspopup="dialog"
+                      aria-label={`Open details for ${item.name}`}
+                    >
+                      <img
+                        src={item.imagePath}
+                        alt={`${item.name} board`}
+                        title={item.name}
+                        loading="lazy"
+                      />
+                    </button>
+                  ))}
+              </div>
             </div>
-            
-            <div className="tier-content">
-              {filteredItems
-                .filter(item => item.tier === tier)
-                .sort((a, b) => a.tierPosition - b.tierPosition)
-                .map(item => (
-                  <div
-                    key={item.name}
-                    onClick={() => setSelectedItem(item)}
-                    className="item-card"
-                  >
-                    <img
-                      src={item.imagePath}
-                      alt={item.name}
-                      title={item.name}
-                      loading="lazy"
-                    />
-                  </div>
-                ))}
-            </div>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
+      )}
 
       {/* Modal */}
       <Modal 
         isOpen={!!selectedItem} 
-        onClose={() => setSelectedItem(null)}
+        titleId={modalTitleId}
+        onClose={closeModal}
+        initialFocusRef={closeButtonRef}
       >
         {selectedItem && (
           <>
-            <h2 className="text-xl font-bold mb-4">{selectedItem.name}</h2>
-            <div className="aspect-video mb-4">
+            <h2 id={modalTitleId} className="modal-title">{selectedItem.name}</h2>
+            <div className="modal-image-frame">
               <img
                 src={selectedItem.imagePath}
-                alt={selectedItem.name}
-                className="w-full h-full object-cover rounded"
+                alt={`${selectedItem.name} board`}
+                className="modal-image"
               />
             </div>
-            <div className="space-y-3">
+            <div className="modal-details">
               <p>
                 <strong>Type:</strong> <a href="https://github.com/platima/board-taxomomies" target="_blank" rel="noopener noreferrer">{selectedItem.type}</a>
               </p>
@@ -177,7 +320,7 @@ const TierList = () => {
       <footer className="footer">
         <a href="https://shop.plati.ma" target="_blank" rel="noopener noreferrer">SBC Shop</a> 
         <a href="https://youtube.com/@PlatimaTinkers" target="_blank" rel="noopener noreferrer">YouTube Channel</a><br/>
-        <img align="center" src="https://visitor-badge.laobi.icu/badge?page_id=platima.sbctierlist.com" height="20" /> 
+        <img align="center" src="https://visitor-badge.laobi.icu/badge?page_id=platima.sbctierlist.com" alt="Visitor counter" height="20" /> 
       </footer>
     </div>
   );
