@@ -218,5 +218,15 @@
     "reviewDate": "2026-02-27",
     "purchaseLink": "https://shop.plati.ma/",
     "type": "SBC"
+  },
+  {
+    "name": "Radxa Dragon Q6A",
+    "videoUrl": "https://www.youtube.com/watch?v=9FRpJK-b4SY",
+    "imagePath": "/img/radxa-q6a.png",
+    "tier": "S",
+    "tierPosition": 7,
+    "reviewDate": "2026-04-24",
+    "purchaseLink": "https://shop.plati.ma/",
+    "type": "SBC"
   }
 ]
