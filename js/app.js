@@ -246,21 +246,26 @@ const TierList = () => {
                   .filter(item => item.tier === tier)
                   .sort((a, b) => a.tierPosition - b.tierPosition)
                   .map(item => (
-                    <button
-                      type="button"
-                      key={`${item.name}-${item.tier}-${item.tierPosition}`}
-                      onClick={(event) => openItemDetails(item, event)}
-                      className="item-card"
-                      aria-haspopup="dialog"
-                      aria-label={`Open details for ${item.name}`}
-                    >
-                      <img
-                        src={item.imagePath}
-                        alt={`${item.name} board`}
-                        title={item.name}
-                        loading="lazy"
-                      />
-                    </button>
+                    <div key={`${item.name}-${item.tier}-${item.tierPosition}`} className="item-card-wrapper">
+                      <button
+                        type="button"
+                        onClick={(event) => openItemDetails(item, event)}
+                        className="item-card"
+                        aria-haspopup="dialog"
+                        aria-label={`Open details for ${item.name}`}
+                      >
+                        <img
+                          src={item.imagePath}
+                          alt={`${item.name} board`}
+                          loading="lazy"
+                        />
+                      </button>
+                      <div className="item-tooltip" role="tooltip">
+                        <strong>{item.name}</strong>
+                        <span>Type: {item.type}</span>
+                        <em>Reviewed: {item.reviewDate}</em>
+                      </div>
+                    </div>
                   ))}
               </div>
             </div>

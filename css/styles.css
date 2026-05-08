@@ -179,6 +179,49 @@ button {
 }
 
 /* Item Card Styles */
+.item-card-wrapper {
+  position: relative;
+}
+
+.item-tooltip {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  position: absolute;
+  bottom: calc(100% + 6px);
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(20, 20, 20, 0.95);
+  color: #f0f0f0;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 0.375rem;
+  padding: 0.4rem 0.6rem;
+  font-size: 0.75rem;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.15s ease, visibility 0.15s ease;
+  z-index: 100;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.item-tooltip::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid transparent;
+  border-top-color: rgba(20, 20, 20, 0.95);
+}
+
+.item-card-wrapper:hover .item-tooltip,
+.item-card-wrapper:focus-within .item-tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+
 .item-card {
   width: 105px; /* Slightly larger to fit tier row height */
   height: 105px;
