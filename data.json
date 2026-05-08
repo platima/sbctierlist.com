@@ -228,5 +228,15 @@
     "reviewDate": "2026-04-24",
     "purchaseLink": "https://shop.plati.ma/",
     "type": "SBC"
+  },
+  {
+    "name": "Luckfox Aura",
+    "videoUrl": "https://www.youtube.com/watch?v=UmhIMSaOKHU",
+    "imagePath": "/img/luckfox-aura.png",
+    "tier": "S",
+    "tierPosition": 8,
+    "reviewDate": "2026-05-08",
+    "purchaseLink": "https://shop.plati.ma/products/luckfox-aura-high-performance-linux-development-board",
+    "type": "eSBC"
   }
 ]
