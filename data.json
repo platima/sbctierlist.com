@@ -238,5 +238,15 @@
     "reviewDate": "2026-05-08",
     "purchaseLink": "https://shop.plati.ma/products/luckfox-aura-high-performance-linux-development-board",
     "type": "eSBC"
+  },
+  {
+    "name": "Luckfox Lume",
+    "videoUrl": "https://www.youtube.com/watch?v=86eL--4lDL8",
+    "imagePath": "/img/luckfox-lume.png",
+    "tier": "A",
+    "tierPosition": 10,
+    "reviewDate": "2026-05-22",
+    "purchaseLink": "https://shop.plati.ma/products/luckfox-lume-industrial-linux-development-board",
+    "type": "eSBC"
   }
 ]
