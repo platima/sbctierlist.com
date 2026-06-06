@@ -248,5 +248,15 @@
     "reviewDate": "2026-05-22",
     "purchaseLink": "https://shop.plati.ma/products/luckfox-lume-industrial-linux-development-board",
     "type": "eSBC"
+  },
+  {
+    "name": "SpacemiT K3 Pico-ITX",
+    "videoUrl": "https://youtu.be/JVWSI6pds4Q",
+    "imagePath": "/img/spacemit-k3-pico-itx.png",
+    "tier": "A",
+    "tierPosition": 11,
+    "reviewDate": "2026-06-06",
+    "purchaseLink": "https://milkv.io/jupiter2",
+    "type": "DevBoard"
   }
 ]
