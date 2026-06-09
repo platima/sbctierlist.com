@@ -220,22 +220,6 @@ const TierList = () => {
         Filter definitions available at <a href="https://github.com/platima/board-taxomomies" target="_blank" rel="noopener noreferrer">github.com/platima/board-taxomomies</a>
       </div>
 
-      {/* Vendor Filter Buttons */}
-      <div className="filter-label">Filter by Vendor</div>
-      <div className="filter-buttons vendor-filters" role="group" aria-label="Vendor filters">
-        {vendors.map(vendor => (
-          <button
-            type="button"
-            key={vendor}
-            onClick={() => setVendorFilter(vendor)}
-            aria-pressed={vendorFilter === vendor}
-            className={vendorFilter === vendor ? 'active' : ''}
-          >
-            {vendor}
-          </button>
-        ))}
-      </div>
-
       {isLoading && (
         <div className="status-panel" role="status" aria-live="polite">
           Loading boards...
@@ -295,6 +279,26 @@ const TierList = () => {
             </div>
           ))}
         </div>
+      )}
+
+      {/* Vendor Filter Buttons */}
+      {!isLoading && !loadError && (
+        <>
+          <div className="filter-label">Filter by Vendor</div>
+          <div className="filter-buttons vendor-filters" role="group" aria-label="Vendor filters">
+            {vendors.map(vendor => (
+              <button
+                type="button"
+                key={vendor}
+                onClick={() => setVendorFilter(vendor)}
+                aria-pressed={vendorFilter === vendor}
+                className={vendorFilter === vendor ? 'active' : ''}
+              >
+                {vendor}
+              </button>
+            ))}
+          </div>
+        </>
       )}
 
       {/* Modal */}
