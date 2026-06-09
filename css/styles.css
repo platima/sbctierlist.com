@@ -71,6 +71,7 @@ h1 {
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: var(--text-secondary);
+  margin-top: 16px;
   margin-bottom: 0.5rem;
 }
 
