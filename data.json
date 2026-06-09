@@ -7,7 +7,8 @@
     "tierPosition": 0,
     "reviewDate": "2025-01-10",
     "purchaseLink": "https://shop.plati.ma/products/rp2350-plus-processor-module-type-c-4mb-no-headers",
-    "type": "ESB"
+    "type": "ESB",
+    "vendor": "Waveshare"
   },
   {
     "name": "ESP32-P4-Function-EV-Board",
@@ -17,7 +18,8 @@
     "tierPosition": 0,
     "reviewDate": "2025-01-18",
     "purchaseLink": "https://www.aliexpress.com/item/1005007259059322.html",
-    "type": "DevBoard"
+    "type": "DevBoard",
+    "vendor": "Espressif"
   },
   {
     "name": "Luckfox Lyra / Lyra Plus",
@@ -27,7 +29,8 @@
     "tierPosition": 1,
     "reviewDate": "2025-02-09",
     "purchaseLink": "https://shop.plati.ma/search?q=lyra",
-    "type": "eSBC"
+    "type": "eSBC",
+    "vendor": "Luckfox"
   },
   {
     "name": "Luckfox Omni / Core3576",
@@ -37,7 +40,8 @@
     "tierPosition": 2,
     "reviewDate": "2025-02-21",
     "purchaseLink": "https://shop.plati.ma/search?q=Omni3576",
-    "type": "DevBoard"
+    "type": "DevBoard",
+    "vendor": "Luckfox"
   },
   {
     "name": "Radxa X4",
@@ -47,7 +51,8 @@
     "tierPosition": 1,
     "reviewDate": "2025-03-21",
     "purchaseLink": "https://shop.plati.ma/",
-    "type": "SBC"
+    "type": "SBC",
+    "vendor": "Radxa"
   },
   {
     "name": "Radxa Zero 2 Pro",
@@ -57,7 +62,8 @@
     "tierPosition": 3,
     "reviewDate": "2025-03-28",
     "purchaseLink": "https://shop.plati.ma/",
-    "type": "SBC"
+    "type": "SBC",
+    "vendor": "Radxa"
   },
   {
     "name": "Luckfox Pico Pi A W 4G",
@@ -67,7 +73,8 @@
     "tierPosition": 2,
     "reviewDate": "2025-05-03",
     "purchaseLink": "https://shop.plati.ma/products/luckfox-pico-pi-preorder",
-    "type": "eSBC"
+    "type": "eSBC",
+    "vendor": "Luckfox"
   },
   {
     "name": "Orange Pi RV2",
@@ -77,7 +84,8 @@
     "tierPosition": 0,
     "reviewDate": "2025-06-15",
     "purchaseLink": "https://geni.us/BWQsgQ",
-    "type": "SBC"
+    "type": "SBC",
+    "vendor": "Orange Pi"
   },
   {
     "name": "Luckfox Lyra Ultra W",
@@ -87,7 +95,8 @@
     "tierPosition": 4,
     "reviewDate": "2025-06-21",
     "purchaseLink": "https://shop.plati.ma/",
-    "type": "eSBC"
+    "type": "eSBC",
+    "vendor": "Luckfox"
   },
   {
     "name": "Luckfox Pico 2",
@@ -97,7 +106,8 @@
     "tierPosition": 5,
     "reviewDate": "2025-06-21",
     "purchaseLink": "https://shop.plati.ma/products/luckfox-pico-2-micro-development-board",
-    "type": "ESB"
+    "type": "ESB",
+    "vendor": "Luckfox"
   },
   {
     "name": "Luckfox Nova",
@@ -107,7 +117,8 @@
     "tierPosition": 6,
     "reviewDate": "2025-06-21",
     "purchaseLink": "https://shop.plati.ma/",
-    "type": "eSBC"
+    "type": "eSBC",
+    "vendor": "Luckfox"
   },
   {
     "name": "Luckfox Lyra Zero W",
@@ -117,7 +128,8 @@
     "tierPosition": 3,
     "reviewDate": "2025-07-18",
     "purchaseLink": "https://shop.plati.ma/products/luckfox-lyra-zero-w-micro-linux-development-board",
-    "type": "eSBC"
+    "type": "eSBC",
+    "vendor": "Luckfox"
   },
   {
     "name": "ODROID-C5",
@@ -127,7 +139,8 @@
     "tierPosition": 7,
     "reviewDate": "2025-07-21",
     "purchaseLink": "https://shop.plati.ma/products/odroid-c5-power-efficient-quad-core-sbc",
-    "type": "SBC"
+    "type": "SBC",
+    "vendor": "Hardkernel"
   },
   {
     "name": "SpacemiT MUSE Pi Pro",
@@ -137,7 +150,8 @@
     "tierPosition": 8,
     "reviewDate": "2025-08-09",
     "purchaseLink": "https://shop.plati.ma/",
-    "type": "SBC"
+    "type": "SBC",
+    "vendor": "SpacemiT"
   },
   {
     "name": "ArmSoM Sige7",
@@ -147,7 +161,8 @@
     "tierPosition": 4,
     "reviewDate": "2025-10-03",
     "purchaseLink": "https://shop.plati.ma/",
-    "type": "SBC"
+    "type": "SBC",
+    "vendor": "ArmSoM"
   },
   {
     "name": "Radxa Cubie A7Z",
@@ -157,7 +172,8 @@
     "tierPosition": 1,
     "reviewDate": "2025-11-07",
     "purchaseLink": "https://shop.plati.ma/",
-    "type": "SBC"
+    "type": "SBC",
+    "vendor": "Radxa"
   },
   {
     "name": "ArmSoM CM5 + IO Board",
@@ -167,7 +183,8 @@
     "tierPosition": 5,
     "reviewDate": "2025-11-30",
     "purchaseLink": "https://shop.plati.ma/",
-    "type": "SBC"
+    "type": "SBC",
+    "vendor": "ArmSoM"
   },
   {
     "name": "Libre Potato Sweet Potato",
@@ -177,7 +194,8 @@
     "tierPosition": 2,
     "reviewDate": "2026-01-03",
     "purchaseLink": "https://geni.us/lLBBZ",
-    "type": "SBC"
+    "type": "SBC",
+    "vendor": "Libre Computer"
   },
   {
     "name": "Luckfox Pico Zero",
@@ -187,7 +205,8 @@
     "tierPosition": 6,
     "reviewDate": "2026-01-16",
     "purchaseLink": "https://shop.plati.ma/",
-    "type": "eSBC"
+    "type": "eSBC",
+    "vendor": "Luckfox"
   },
   {
     "name": "ArmSoM P2pro",
@@ -197,7 +216,8 @@
     "tierPosition": 3,
     "reviewDate": "2026-01-31",
     "purchaseLink": "https://shop.plati.ma/",
-    "type": "eSBC"
+    "type": "eSBC",
+    "vendor": "ArmSoM"
   },
   {
     "name": "Walnut Pi ZeroW",
@@ -207,7 +227,8 @@
     "tierPosition": 9,
     "reviewDate": "2026-02-13",
     "purchaseLink": "https://shop.plati.ma/",
-    "type": "SBC"
+    "type": "SBC",
+    "vendor": "Walnut Pi"
   },
   {
     "name": "Libre Computer Alta",
@@ -217,7 +238,8 @@
     "tierPosition": 0,
     "reviewDate": "2026-02-27",
     "purchaseLink": "https://shop.plati.ma/",
-    "type": "SBC"
+    "type": "SBC",
+    "vendor": "Libre Computer"
   },
   {
     "name": "Radxa Dragon Q6A",
@@ -227,7 +249,8 @@
     "tierPosition": 7,
     "reviewDate": "2026-04-24",
     "purchaseLink": "https://shop.plati.ma/",
-    "type": "SBC"
+    "type": "SBC",
+    "vendor": "Radxa"
   },
   {
     "name": "Luckfox Aura",
@@ -237,7 +260,8 @@
     "tierPosition": 8,
     "reviewDate": "2026-05-08",
     "purchaseLink": "https://shop.plati.ma/products/luckfox-aura-high-performance-linux-development-board",
-    "type": "eSBC"
+    "type": "eSBC",
+    "vendor": "Luckfox"
   },
   {
     "name": "Luckfox Lume",
@@ -247,7 +271,8 @@
     "tierPosition": 10,
     "reviewDate": "2026-05-22",
     "purchaseLink": "https://shop.plati.ma/products/luckfox-lume-industrial-linux-development-board",
-    "type": "eSBC"
+    "type": "eSBC",
+    "vendor": "Luckfox"
   },
   {
     "name": "SpacemiT K3 Pico-ITX",
@@ -257,6 +282,7 @@
     "tierPosition": 11,
     "reviewDate": "2026-06-06",
     "purchaseLink": "https://milkv.io/jupiter2",
-    "type": "DevBoard"
+    "type": "DevBoard",
+    "vendor": "SpacemiT"
   }
 ]

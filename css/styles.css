@@ -64,6 +64,20 @@ h1 {
   padding: 0 1rem;
 }
 
+.filter-label {
+  text-align: center;
+  font-size: 0.75em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.vendor-filters {
+  margin-bottom: 2rem;
+}
+
 .filter-info {
   text-align: center;
   font-size: 0.8em;

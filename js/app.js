@@ -100,6 +100,7 @@ const TierList = () => {
   const [isLoading, setIsLoading] = React.useState(true);
   const [loadError, setLoadError] = React.useState('');
   const [filter, setFilter] = React.useState('All');
+  const [vendorFilter, setVendorFilter] = React.useState('All');
   const [selectedItem, setSelectedItem] = React.useState(null);
   const closeButtonRef = React.useRef(null);
   const lastTriggerRef = React.useRef(null);
@@ -147,13 +148,19 @@ const TierList = () => {
     };
   }, []);
 
+  const vendors = React.useMemo(() => {
+    const vendorSet = new Set(items.map(item => item.vendor).filter(Boolean));
+    return ['All', ...Array.from(vendorSet).sort()];
+  }, [items]);
+
   const filteredItems = items.filter(item => {
-    if (filter === 'All') return true;
-    
-    // Case insensitive comparison with the mapped filter value
-    const itemType = (item.type || '').toLowerCase();
-    const filterValue = FILTER_MAPPING[filter].toLowerCase();
-    return itemType === filterValue;
+    if (filter !== 'All') {
+      const itemType = (item.type || '').toLowerCase();
+      const filterValue = FILTER_MAPPING[filter].toLowerCase();
+      if (itemType !== filterValue) return false;
+    }
+    if (vendorFilter !== 'All' && item.vendor !== vendorFilter) return false;
+    return true;
   });
 
   const formatDate = (dateString) => {
@@ -213,6 +220,22 @@ const TierList = () => {
         Filter definitions available at <a href="https://github.com/platima/board-taxomomies" target="_blank" rel="noopener noreferrer">github.com/platima/board-taxomomies</a>
       </div>
 
+      {/* Vendor Filter Buttons */}
+      <div className="filter-label">Filter by Vendor</div>
+      <div className="filter-buttons vendor-filters" role="group" aria-label="Vendor filters">
+        {vendors.map(vendor => (
+          <button
+            type="button"
+            key={vendor}
+            onClick={() => setVendorFilter(vendor)}
+            aria-pressed={vendorFilter === vendor}
+            className={vendorFilter === vendor ? 'active' : ''}
+          >
+            {vendor}
+          </button>
+        ))}
+      </div>
+
       {isLoading && (
         <div className="status-panel" role="status" aria-live="polite">
           Loading boards...
@@ -262,6 +285,7 @@ const TierList = () => {
                       </button>
                       <div className="item-tooltip" role="tooltip">
                         <strong>{item.name}</strong>
+                        <span>Vendor: {item.vendor}</span>
                         <span>Type: {item.type}</span>
                         <em>Reviewed: {item.reviewDate}</em>
                       </div>
@@ -291,8 +315,9 @@ const TierList = () => {
               />
             </div>
             <div className="modal-details">
-              <p>
-                <strong>Type:</strong> <a href="https://github.com/platima/board-taxomomies" target="_blank" rel="noopener noreferrer">{selectedItem.type}</a>
+              <p>                <strong>Vendor:</strong> {selectedItem.vendor}
+              </p>
+              <p>                <strong>Type:</strong> <a href="https://github.com/platima/board-taxomomies" target="_blank" rel="noopener noreferrer">{selectedItem.type}</a>
               </p>
               <p>
                 <strong>Review Date:</strong> {formatDate(selectedItem.reviewDate)}
