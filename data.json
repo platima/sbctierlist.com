@@ -284,5 +284,16 @@
     "purchaseLink": "https://milkv.io/jupiter2",
     "type": "DevBoard",
     "vendor": "SpacemiT"
+  },
+  {
+    "name": "FriendlyElec NanoPi Zero2",
+    "videoUrl": "https://youtu.be/lrcX0Cm2xG4",
+    "imagePath": "/img/nanopi-zero2.png",
+    "tier": "S",
+    "tierPosition": 9,
+    "reviewDate": "2026-07-13",
+    "purchaseLink": "https://www.friendlyelec.com/index.php?route=product/product&product_id=304",
+    "type": "eSBC",
+    "vendor": "FriendlyElec"
   }
 ]
