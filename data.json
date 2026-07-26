@@ -295,5 +295,16 @@
     "purchaseLink": "https://www.friendlyelec.com/index.php?route=product/product&product_id=304",
     "type": "eSBC",
     "vendor": "FriendlyElec"
+  },
+  {
+    "name": "youyeetoo K1",
+    "videoUrl": "https://youtu.be/-Um4noJ4eK8",
+    "imagePath": "/img/youyeetoo-K1.png",
+    "tier": "A",
+    "tierPosition": 12,
+    "reviewDate": "2026-07-24",
+    "purchaseLink": "https://youyeetoo.com/platima-tinkers",
+    "type": "DevBoard",
+    "vendor": "youyeetoo"
   }
 ]
