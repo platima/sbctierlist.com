@@ -306,5 +306,16 @@
     "purchaseLink": "https://youyeetoo.com/platima-tinkers",
     "type": "DevBoard",
     "vendor": "youyeetoo"
+  },
+  {
+    "name": "youyeetoo K1",
+    "videoUrl": "https://youtu.be/RYU09f2BAVU",
+    "imagePath": "/img/armsom-sige6.png",
+    "tier": "A",
+    "tierPosition": 13,
+    "reviewDate": "2026-08-14",
+    "purchaseLink": "https://www.armsom.org/sige",
+    "type": "SBC",
+    "vendor": "ArmSoM"
   }
 ]
