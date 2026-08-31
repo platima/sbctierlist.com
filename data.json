@@ -317,5 +317,16 @@
     "purchaseLink": "https://www.armsom.org/sige",
     "type": "SBC",
     "vendor": "ArmSoM"
+  },
+  {
+    "name": "Walnut Pi 2B",
+    "videoUrl": "https://youtu.be/RYU09f2BAVU",
+    "imagePath": "/img/walnutpi-2b.png",
+    "tier": "B",
+    "tierPosition": 4,
+    "reviewDate": "2026-08-31",
+    "purchaseLink": "https://www.aliexpress.com/item/1005008529154262.html",
+    "type": "SBC",
+    "vendor": "Walnut Pi"
   }
 ]
