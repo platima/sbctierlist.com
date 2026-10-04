@@ -328,5 +328,16 @@
     "purchaseLink": "https://www.aliexpress.com/item/1005008529154262.html",
     "type": "SBC",
     "vendor": "Walnut Pi"
+  },
+  {
+    "name": "TrustKernel PlugMate",
+    "videoUrl": "https://youtu.be/N0p3JyB5aho",
+    "imagePath": "/img/trustkernel-plugmate.png",
+    "tier": "B",
+    "tierPosition": 5,
+    "reviewDate": "2026-10-03",
+    "purchaseLink": "https://shop.plugos.net/products/plugmate",
+    "type": "eSBC",
+    "vendor": "TrustKernel"
   }
 ]
