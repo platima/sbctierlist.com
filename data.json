@@ -339,5 +339,16 @@
     "purchaseLink": "https://shop.plugos.net/products/plugmate",
     "type": "eSBC",
     "vendor": "TrustKernel"
+  },
+  {
+    "name": "Seeed Studio reComputer RK3576",
+    "videoUrl": "https://youtu.be/iXFPPRXB674",
+    "imagePath": "/img/seedstudio-reRK3576.png",
+    "tier": "S",
+    "tierPosition": 10,
+    "reviewDate": "2026-10-16",
+    "purchaseLink": "https://www.seeedstudio.com/reComputer-RK3576-20-p-6816.html",
+    "type": "DevBoard",
+    "vendor": "Seeed Studio"
   }
 ]
