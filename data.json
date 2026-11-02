@@ -350,5 +350,16 @@
     "purchaseLink": "https://www.seeedstudio.com/reComputer-RK3576-20-p-6816.html",
     "type": "DevBoard",
     "vendor": "Seeed Studio"
+  },
+  {
+    "name": "Aimorelogy Ovis",
+    "videoUrl": "https://youtu.be/iXFPPRXB674",
+    "imagePath": "/img/aimorelogy-ovis.png",
+    "tier": "A",
+    "tierPosition": 14,
+    "reviewDate": "2026-11-02",
+    "purchaseLink": "https://aimorelogy.com/en/products/ovis/ovis-camera-module",
+    "type": "eSBC",
+    "vendor": "Aimorelogy"
   }
 ]
